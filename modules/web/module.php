@@ -62,7 +62,7 @@ class Module {
 		} else if(!$session->authenticated) {
 
 		}
-		return self::result(null, 'login', $session->key);
+		return self::result("Welcome to Mesh " . VERSION, 'login', $session->key);
 	}
 
 	public static function result($data, $prompt = '', $key = null, $options = null) {
